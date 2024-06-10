@@ -5,7 +5,7 @@ class EditorPage extends StatefulWidget {
   final Map note;
   final int? index;
 
-  const EditorPage({Key? key, required this.note, required this.index}) : super(key: key);
+  EditorPage({required this.note, required this.index});
 
   @override
   _EditorPageState createState() => _EditorPageState();
@@ -14,36 +14,41 @@ class EditorPage extends StatefulWidget {
 class _EditorPageState extends State<EditorPage> {
   late TextEditingController _titleController;
   late TextEditingController _contentController;
-  late Box box;
 
   @override
   void initState() {
     super.initState();
-    box = Hive.box('notes');
-    _titleController = TextEditingController(text: widget.note['title']);
-    _contentController = TextEditingController(text: widget.note['content']);
+    _titleController = TextEditingController(text: widget.note['title'] ?? '');
+    _contentController = TextEditingController(text: widget.note['content'] ?? '');
   }
 
-  void _saveNote() {
-    var newNote = {
-      'title': _titleController.text,
-      'content': _contentController.text,
-    };
+  @override
+  void dispose() {
+    _titleController.dispose();
+    _contentController.dispose();
+    super.dispose();
+  }
 
-    if (widget.index == null) {
-      box.add(newNote);
-    } else {
-      box.putAt(widget.index!, newNote);
+  void saveNote() {
+    if (_titleController.text.isNotEmpty || _contentController.text.isNotEmpty) {
+      var newNote = {
+        'title': _titleController.text,
+        'content': _contentController.text,
+      };
+
+      if (widget.index == null) {
+        Hive.box('notes').add(newNote);
+      } else {
+        Hive.box('notes').putAt(widget.index!, newNote);
+      }
     }
-
     Navigator.pop(context);
   }
 
-  void _deleteNote() {
+  void deleteNote() {
     if (widget.index != null) {
-      box.deleteAt(widget.index!);
+      Hive.box('notes').deleteAt(widget.index!);
     }
-
     Navigator.pop(context);
   }
 
@@ -51,45 +56,48 @@ class _EditorPageState extends State<EditorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal, // Changed AppBar color
-        title: Text('Edit Note'),
+        backgroundColor: Colors.teal,
+        title: Text(widget.index == null ? 'New Note' : 'Edit Note'),
         actions: [
-          IconButton(
-            icon: Icon(Icons.save),
-            onPressed: _saveNote,
-          ),
-          if (widget.index != null) // Show delete button only for existing notes
+          if (widget.index != null)
             IconButton(
               icon: Icon(Icons.delete),
-              onPressed: _deleteNote,
+              onPressed: deleteNote,
             ),
         ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          children: <Widget>[
+          children: [
             TextField(
               controller: _titleController,
               decoration: InputDecoration(
                 hintText: 'Title',
-                hintStyle: TextStyle(color: Colors.grey), // Changed hint text color
+                hintStyle: TextStyle(fontSize: 18, color: Colors.grey),
               ),
+              style: TextStyle(fontSize: 22),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 16),
             Expanded(
               child: TextField(
                 controller: _contentController,
                 maxLines: null,
-                expands: true,
                 decoration: InputDecoration(
-                  hintText: 'Content',
-                  hintStyle: TextStyle(color: Colors.grey), // Changed hint text color
+                  hintText: 'Start writing your note...',
+                  hintStyle: TextStyle(fontSize: 18, color: Colors.grey),
+                  border: InputBorder.none,
                 ),
+                style: TextStyle(fontSize: 18),
               ),
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
+        child: Icon(Icons.save),
+        onPressed: saveNote,
       ),
     );
   }

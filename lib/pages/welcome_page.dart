@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'main_page.dart';
 
 class WelcomePage extends StatelessWidget {
-  const WelcomePage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,11 +9,12 @@ class WelcomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          children: [
             Text(
-              'Welcome to MyNoteApp',
-              style: GoogleFonts.lobster(
-                fontSize: 32,
+              'Welcome to AppNote',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
                 color: Colors.teal, // Changed text color
               ),
             ),
@@ -25,7 +23,7 @@ class WelcomePage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal, // Changed button color
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(30.0),
                 ),
               ),
               onPressed: () {
@@ -36,10 +34,18 @@ class WelcomePage extends StatelessWidget {
               },
               child: Text(
                 'Start taking Notes',
-                style: TextStyle(fontSize: 18, color: Colors.white), // Changed text color
+                style: TextStyle(color: Colors.white),
               ),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+          '© 2024 Keltoum Hamaidi. All rights reserved.',
+          style: TextStyle(color: Colors.teal),
+          textAlign: TextAlign.center,
         ),
       ),
     );

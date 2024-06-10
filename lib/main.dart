@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+import 'package:note_app_flutter/pages/main_page.dart';
 import 'pages/welcome_page.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  await Hive.openBox('notes');
+
+  var box = await Hive.openBox('notes');
 
   runApp(const MyApp());
 }
@@ -17,10 +19,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Colors.teal, // Changed primary color
+        primaryColor: Colors.teal,
         scaffoldBackgroundColor: Colors.blueGrey[50], // Changed scaffold background color
         textTheme: TextTheme(
-          bodyMedium: TextStyle(color: Colors.teal), // Changed text color
+          bodyLarge: TextStyle(color: Colors.teal), // Changed text color
         ),
       ),
       debugShowCheckedModeBanner: false,
