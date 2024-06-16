@@ -1,4 +1,6 @@
 Notes Application
+
+
 This is a mobile application developed using Flutter and Hive for local storage. It allows users to create, edit, and delete notes efficiently and store them locally on their devices.
 
 Features
