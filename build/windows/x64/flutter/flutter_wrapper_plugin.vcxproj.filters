@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6F266616-CBF1-3CFC-A7B4-8A9C5035F6B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4171FACA-63D8-3A88-9809-ECF3D28ACB9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

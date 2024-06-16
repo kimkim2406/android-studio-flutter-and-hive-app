@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\build\windows\x64\CMakeFiles\dc270e7932efc5e3b5dcbcfd2ebab985\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6F266616-CBF1-3CFC-A7B4-8A9C5035F6B0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/CMakeFiles/INSTALL.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/CMakeFiles/ALL_BUILD.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/flutter/CMakeFiles/flutter_assemble.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/flutter/CMakeFiles/INSTALL.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/runner/CMakeFiles/INSTALL.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/runner/CMakeFiles/note_app_flutter.dir
+C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir

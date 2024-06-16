@@ -1,0 +1,28 @@
+^C:\USERS\HASHIM\DESKTOP\DATA SCIENCE CAREER\UNIVERSITY\KELTOUM\APPNOTE-FLUTTER-MAIN\APPNOTE-FLUTTER-MAIN\NOTE_APP_FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\B64C4CB788780A448ED0AF499E253CD5\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\dev\flutter "PROJECT_DIR=C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter" FLUTTER_ROOT=C:\dev\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter" "FLUTTER_TARGET=C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\lib\main.dart" DART_DEFINES=RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9lZGQ4NTQ2MTE2NDU3YmRmMWM1YmRmYjEzZWNiOTQ2M2QyYmI1ZWQ0Lw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\Hashim\Desktop\Data science career\university\keltoum\AppNote-Flutter-main\AppNote-Flutter-main\note_app_flutter\.dart_tool\package_config.json" C:/dev/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HASHIM\DESKTOP\DATA SCIENCE CAREER\UNIVERSITY\KELTOUM\APPNOTE-FLUTTER-MAIN\APPNOTE-FLUTTER-MAIN\NOTE_APP_FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\B3A37DCFB4C140A789E17A030205B18F\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HASHIM\DESKTOP\DATA SCIENCE CAREER\UNIVERSITY\KELTOUM\APPNOTE-FLUTTER-MAIN\APPNOTE-FLUTTER-MAIN\NOTE_APP_FLUTTER\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/windows" "-BC:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64" --check-stamp-file "C:/Users/Hashim/Desktop/Data science career/university/keltoum/AppNote-Flutter-main/AppNote-Flutter-main/note_app_flutter/build/windows/x64/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

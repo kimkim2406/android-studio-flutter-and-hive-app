@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.teal,
         scaffoldBackgroundColor: Colors.blueGrey[50], // Changed scaffold background color
         textTheme: TextTheme(
-          bodyLarge: TextStyle(color: Colors.teal), // Changed text color
+          bodyLarge: TextStyle(color: Colors.teal), //
         ),
       ),
       debugShowCheckedModeBanner: false,

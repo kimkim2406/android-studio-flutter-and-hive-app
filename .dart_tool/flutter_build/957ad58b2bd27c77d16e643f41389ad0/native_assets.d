@@ -1,0 +1,1 @@
+ C:\\Users\\Hashim\\Desktop\\Data\ science\ career\\university\\keltoum\\AppNote-Flutter-main\\AppNote-Flutter-main\\note_app_flutter\\.dart_tool\\flutter_build\\957ad58b2bd27c77d16e643f41389ad0\\native_assets.yaml: 
